@@ -16,14 +16,21 @@
 \usepackage[T1]{fontenc}
 \usepackage{comment}
 \usepackage{framed}
+\usepackage{graphicx}
 \usepackage{multirow}
+\usepackage{booktabs}
 \usepackage{color}
 \usepackage{tabulary}
 \usepackage{enumitem}
 	\setlist[itemize]{leftmargin=5.5mm}
 
-\usepackage{hyperref}
-\usepackage{url}
+%\usepackage{hyperref}
+%\usepackage{url}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{breaklinks=true}
+\urlstyle{same}
+%\usepackage{cite}
 \usepackage{soul}
 \usepackage{rotating}
 \usepackage{lscape}
@@ -60,7 +67,7 @@
 \input{tex/discussion}
 \input{tex/threats-to-validity}
 \input{tex/conclusion}
-\input{tex/data-availability-statements}
+%\input{tex/data-availability-statements}
 %%%%%%% End Content %%%%%%%%%
 
 \begin{comment}
@@ -197,6 +204,7 @@ Insert the Acknowledgment text here.
 % BibTeX documentation can be easily obtained at:
 % http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
 
+\Urlmuskip=0mu plus 1mu\relax
 \bibliographystyle{iet}
 \bibliography{bibliography}
 %
