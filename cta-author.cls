@@ -307,9 +307,7 @@
 %  {\message{No configuration file for #1}}%
 %  \makeatother}
 
-%\def\@journal@title{IET Research Journals}
-\def\@journal@title{}
-
+\def\@journal@title{IET Research Journals}
 
 \def\@doi@fixed@field{10.1049/iet-cta.}
 \def\@doi@variable@field{00000000000000000000}
@@ -402,15 +400,12 @@ www.ietdl.org}\par\egroup}%
 \def\today{\number\day/\ifcase\month\or
  1\or 2\or 3\or 4\or 5\or 6\or 7\or 8\or 9\or 10\or 11\or 12\fi/\number\year}
 
-%\newcommand{\evenpagefooter}{\vbox{\hbox to \textwidth{\hfill\textit{IET Research Journals,} \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi \iferratum\relax p.~\else pp.~\fi\page@extent@info}
-\newcommand{\evenpagefooter}{\vbox{\hbox to \textwidth{\hfill\textit{} \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi \iferratum\relax p.~\else \fi}
+\newcommand{\evenpagefooter}{\vbox{\hbox to \textwidth{\hfill\textit{IET Research Journals,} \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi \iferratum\relax p.~\else pp.~\fi\page@extent@info}
 \ifIET
-%\vbox{\hbox to \textwidth{\thepage\hfill$\copyright$ The Institution of Engineering and Technology \cyear@info}}
-\vbox{\hbox to \textwidth{\thepage\hfill  }}
+\vbox{\hbox to \textwidth{\thepage\hfill$\copyright$ The Institution of Engineering and Technology \cyear@info}}
 \else
 \ifOTHER
-%\vbox{\hbox to \textwidth{\thepage\hfill$\copyright$ Yet to come}}
-\vbox{\hbox \textwidth{\thepage\hfill}}
+\vbox{\hbox to \textwidth{\thepage\hfill$\copyright$ Yet to come}}
 \else
 \ifCCBY
 \vbox{\hbox to \textwidth{\hfill This is an open access article published by the IET under the Creative Commons}}\par%
@@ -436,15 +431,12 @@ www.ietdl.org}\par\egroup}%
 \fi%
 }}
 
-%\newcommand{\oddpagefooter}{\vbox{\hbox to \textwidth{\textit{IET Research Journals,} \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi \iferratum\relax p.~\else pp.~\fi\page@extent@info\hfill}
-\newcommand{\oddpagefooter}{\vbox{\hbox to \textwidth{\textit{} \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi \iferratum\relax p.~\else ~\fi\hfill}
+\newcommand{\oddpagefooter}{\vbox{\hbox to \textwidth{\textit{IET Research Journals,} \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi \iferratum\relax p.~\else pp.~\fi\page@extent@info\hfill}
 \ifIET
-%\vbox{\hbox to \textwidth{$\copyright$ The Institution of Engineering and Technology \cyear@info\hfill\thepage}}
-\vbox{\hbox to \textwidth{\hfill\thepage}}
+\vbox{\hbox to \textwidth{$\copyright$ The Institution of Engineering and Technology \cyear@info\hfill\thepage}}
 \else
 \ifOTHER
-%\vbox{\hbox to \textwidth{$\copyright$ Yet to come\hfill\thepage}}%
-\vbox{\hbox \textwidth{\hfill\thepage}}%
+\vbox{\hbox to \textwidth{$\copyright$ Yet to come\hfill\thepage}}%
 \else
 \ifCCBY
 \vbox{\hbox to \textwidth{This is an open access article published by the IET under the Creative Commons\hfill}}\par%
@@ -480,14 +472,12 @@ www.ietdl.org}\par\egroup}%
 
 \newcommand{\evenerratumfoot}{\vbox{\fontsize{8}{10}\selectfont\sf%
 \hbox to \textwidth{\thepage\hfill}\par%
-%\hbox to \textwidth{{$\copyright$ The Institution of Engineering and Technology \cyear@info}\hfill{\textit{IET Research Journals,}\ \cyear@info,\ \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi p.~\page@extent@info}}}}%
-\hbox  \textwidth{\hfill{\textit{}\ \ \ifrevises\year \vol \issue \ \else\fi }}}}%
+\hbox to \textwidth{{$\copyright$ The Institution of Engineering and Technology \cyear@info}\hfill{\textit{IET Research Journals,}\ \cyear@info,\ \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi p.~\page@extent@info}}}}%
 
 \newcommand{\odderratumfoot}{\vbox{\fontsize{8}{10}\selectfont\sf%
 \hbox to \textwidth{\hfill\thepage}\par%
-%\hbox to \textwidth{{\textit{IET Research Journals,}\ \cyear@info,\ \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi p.~\page@extent@info}\hfill{$\copyright$ The Institution of Engineering and Technology \cyear@info}}}}%
-%\hbox to \textwidth{{\textit{,}\ \cyear@info,\ \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi p.~\page@extent@info}\hfill{$\copyright$ The Institution of Engineering and Technology \cyear@info}}}}%
-\hbox \textwidth{{\textit{}\ \ \ifrevises\year \vol \issue \ \else\fi }\hfill{  }}}}%
+\hbox to \textwidth{{\textit{IET Research Journals,}\ \cyear@info,\ \ifrevises\year@info, Vol.~\vol@info, Iss.~\issue@info,\ \else\fi p.~\page@extent@info}\hfill{$\copyright$ The Institution of Engineering and Technology \cyear@info}}}}%
+
 %\setcounter{footnote}{0}
 \renewcommand\thefootnote{\@fnsymbol\c@footnote}
 
@@ -684,8 +674,7 @@ www.ietdl.org}\par\egroup}%
    \fi%
    \end{minipage}\hfill%
    \begin{minipage}[b]{128pt}
-%   \hbox{\raise-2pt\hbox{\includegraphics[width=128pt]{IET_Journals_Logo.eps}}}%
- %  \hbox{\raise-2pt\hbox{\includegraphics[width=128pt]{IET_Journals_Logo.eps}}}%
+   \hbox{\raise-2pt\hbox{\includegraphics[width=128pt]{IET_Journals_Logo.eps}}}%
    \end{minipage}}\par%
   \nointerlineskip\vskip6.3pt\nointerlineskip%
   \iferratum\else\rule{\textwidth}{.5pt}\par\fi%
@@ -1200,7 +1189,7 @@ www.ietdl.org}\par\egroup}%
 \def\NAT@space{\,}
 
 %\newcommand{\citenumfont}[1]{{#1}}
-\renewcommand\bibnumfmt[1]{{#1}}
+\renewcommand\bibnumfmt[1]{[{#1}]}
 
 \renewcommand\NAT@bibsetnum[1]{\fontsize{7}{8}\selectfont
   \refsection{\refname}%
@@ -1209,7 +1198,10 @@ www.ietdl.org}\par\egroup}%
       \setlength\leftmargin{\z@}%
       \setlength{\labelsep}{8pt}%
       \addtolength{\leftmargin}{\labelwidth}%
-      \addtolength{\leftmargin}{\labelsep}
+%      \addtolength{\leftmargin}{\labelsep}%      
+
+\addtolength{\leftmargin}{0.6em}
+
    \setlength{\itemsep}{\z@}
   \setlength{\parsep}{\z@}%
    \ifNAT@openbib
@@ -1222,7 +1214,7 @@ www.ietdl.org}\par\egroup}%
 
 \renewenvironment{thebibliography}[1]{%
  \list
-   {\@biblabel{\arabic{NAT@ctr}}}{\@bibsetup{#1}%
+   {\@biblabel{\arabic\c@enumiv}}{\@bibsetup{#1}%
     \setcounter{NAT@ctr}{0}}%
     \ifNAT@openbib
       \newcommand\newblock{\par}
@@ -1453,7 +1445,7 @@ www.ietdl.org}\par\egroup}%
 
 \def\au#1{#1\refstepcounter{qauth}\expandafter\gdef\csname qau\theqauth\endcsname{#1}}%
 \def\add#1#2{$^{\it #1}$#2\par}
-\def\email#1{\corr\ Corresponding author e-mail: #1}
+\def\email#1{\corr\ E-mail: #1}
 
 \long\def\onecoleqn#1{\begin{figure}[!b]\par\llap{\hbox to 267pt{\begin{minipage}{\textwidth}%
 \vrule height.5pt width\textwidth%
@@ -1498,8 +1490,8 @@ www.ietdl.org}\par\egroup}%
 \fi
 \fi
 
-%\CYear{2015}
-%\Year{2015}
+\CYear{2015}
+\Year{2015}
 
 \def\correnvelope{\includegraphics{IET_email_icon.eps}}%
 
