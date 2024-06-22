@@ -1287,7 +1287,7 @@ FUNCTION {format.tr.number}
 
 FUNCTION {format.org.or.pub}
 { 't :=
-  "("
+  ""
   address empty$ t empty$ and
     'skip$
     {
@@ -1577,7 +1577,7 @@ FUNCTION {book}
   if$
   format.number.series output
   format.publisher.address output 
-  format.date "year" output.check ")" *
+  format.date "year" output.check "" *
   new.block
   format.note output
   output.web.refs  % urlbst
